@@ -78,6 +78,8 @@ Thumbs.db
 
 # local history (Visual Code extension)
 .history
+.project1
+.project1.html
 
 # Pinegrow
 _pginfo
@@ -93,4 +95,3 @@ pinegrow.json
 # Blender
 *.blend1
 
-.project1.html
