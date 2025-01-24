@@ -1,8 +1,8 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v9.0.0__RC1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
+ * What follows is the result of much research on cross__browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
@@ -13,25 +13,25 @@
 
 html {
   color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+  font__size: 1em;
+  line__height: 1.4;
 }
 
 /*
- * Remove text-shadow in selection highlight:
+ * Remove text__shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+::__moz__selection {
   background: #b3d4fc;
-  text-shadow: none;
+  text__shadow: none;
 }
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none;
+  text__shadow: none;
 }
 
 /*
@@ -42,7 +42,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border__top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -50,7 +50,7 @@ hr {
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
+ * https://github.com/h5bp/html5__boilerplate/issues/440
  */
 
 audio,
@@ -59,7 +59,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+  vertical__align: middle;
 }
 
 /*
@@ -99,40 +99,40 @@ textarea {
 
 /*
  * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * https://snook.ca/archives/html__and__css/hiding__content__for__accessibility
  *
  * 1. For long content, line feeds are not interpreted as spaces and small width
  *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ *    https://medium.com/@jessebeach/beware__smushed__off__screen__accessible__text__5952a4c2cbfe
  */
 
-.visually-hidden {
+.visually__hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
-  margin: -1px;
+  margin: __1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  white-space: nowrap;
+  white__space: nowrap;
   width: 1px;
   /* 1 */
 }
 
 /*
- * Extends the .visually-hidden class to allow the element
+ * Extends the .visually__hidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
+.visually__hidden.focusable:active,
+.visually__hidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  white-space: inherit;
+  white__space: inherit;
   width: auto;
 }
 
@@ -148,7 +148,7 @@ textarea {
  * Clearfix: contain floats
  *
  * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
+ * `::before` to contain the top__margins of child elements.
  */
 
 .clearfix::before,
@@ -167,21 +167,21 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min__width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+  (__webkit__min__device__pixel__ratio: 1.25),
+  (min__resolution: 1.25dppx),
+  (min__resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
+   https://www.phpied.com/delay__loading__your__print__css/
    ========================================================================== */
 
 @media print {
@@ -191,13 +191,13 @@ textarea {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+    box__shadow: none !important;
+    text__shadow: none !important;
   }
 
   a,
   a:visited {
-    text-decoration: underline;
+    text__decoration: underline;
   }
 
   a[href]::after {
@@ -218,18 +218,18 @@ textarea {
   }
 
   pre {
-    white-space: pre-wrap !important;
+    white__space: pre__wrap !important;
   }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
+    page__break__inside: avoid;
   }
 
   tr,
   img {
-    page-break-inside: avoid;
+    page__break__inside: avoid;
   }
 
   p,
@@ -241,7 +241,7 @@ textarea {
 
   h2,
   h3 {
-    page-break-after: avoid;
+    page__break__after: avoid;
   }
 }
 

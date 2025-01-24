@@ -10,15 +10,15 @@
   "author": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "start": "webpack serve ____open ____config webpack.config.dev.js",
+    "build": "webpack ____config webpack.config.prod.js"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^11.0.0",
-    "html-webpack-plugin": "^5.5.3",
+    "copy__webpack__plugin": "^11.0.0",
+    "html__webpack__plugin": "^5.5.3",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
-    "webpack-merge": "^5.9.0"
+    "webpack__cli": "^5.1.4",
+    "webpack__dev__server": "^4.15.1",
+    "webpack__merge": "^5.9.0"
   }
 }

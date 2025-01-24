@@ -1,6 +1,6 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Include your project__specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring__files
 # Useful .gitignore templates: https://github.com/github/gitignore
-node_modules
+node__modules
 dist
 .cache
