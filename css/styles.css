@@ -28,6 +28,16 @@
     grid-row: 1 / 2;
 }
 
+.nav-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-banner {
+    max-width: 100%;
+    height: auto;
+}
+
 .home-page__intro{
     grid-row: 2 / 3;
 }
