@@ -1,5 +1,5 @@
-# Include your project__specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring__files
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 # ignore all files starting with . or ~
@@ -7,7 +7,7 @@
 ~*
 
 # ignore node/grunt dependency directories
-node__modules/
+node_modules/
 
 # Ignore build directories.
 /build
@@ -17,18 +17,18 @@ node__modules/
 /vendor
 
 # ignore components loaded via Bower
-/bower__components
+/bower_components
 
 # ignore jekyll build directory
-/__site
+/_site
 
 # ignore OS generated files
 ehthumbs.db
 Thumbs.db
 
 # ignore Editor files
-*.sublime__project
-*.sublime__workspace
+*.sublime-project
+*.sublime-workspace
 *.komodoproject
 
 # ignore log files and databases
@@ -59,31 +59,29 @@ Thumbs.db
 *.key
 *.pem
 
-# ________________________________________________________________________________________________________________
+# --------------------------------------------------------
 # BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
-# ________________________________________________________________________________________________________________
+# --------------------------------------------------------
 
 # track these files, if they exist
 !.editorconfig
 !.env.example
-!.git__blame__ignore__revs
+!.git-blame-ignore-revs
 !.gitignore
 !.nvmrc
 !.phpcs.xml.dist
 
 
-# ________________________________________________________________________________________________________________
+# --------------------------------------------------------
 # ignore Specific personal project files
-# ________________________________________________________________________________________________________________
+# --------------------------------------------------------
 
 # local history (Visual Code extension)
 .history
-.project1
-.project1.html
 
 # Pinegrow
-__pginfo
-__pgbackup
+_pginfo
+_pgbackup
 pinegrow.json
 
 # PhotoLine
@@ -94,6 +92,3 @@ pinegrow.json
 
 # Blender
 *.blend1
-
-.css_grid_example
-
