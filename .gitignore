@@ -78,13 +78,12 @@ Thumbs.db
 
 # local history (Visual Code extension)
 .history
-.project1
-.project1.html
+css/message.css
 
-# Pinegrow
+# Pinegl-row-span
 __pginfo
 __pgbackup
-pinegrow.json
+pinegl-row-span.json
 
 # PhotoLine
 .pldbak
@@ -95,3 +94,5 @@ pinegrow.json
 # Blender
 *.blend1
 
+.css_grid_example\css_grid_example
+.css_grid_example
