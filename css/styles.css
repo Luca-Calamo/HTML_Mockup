@@ -1,9 +1,272 @@
+---------- Typography ---------------- */
+
+h1, h2, h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    color: #3b3b3b;
+    font-size: 2em;
+    
+}
+
+h2 {
+    color: #494949;
+    font-size: 1.75em;
+}
+
+h3 {
+    color: #545454;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h4 {
+    color: #a3a3a3;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    /*it's supposed to be Myriad Pro, but it's not in Google Fonts...*/
+    font-size: 0.75em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav-bar__menu {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.nav-bar__menu a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hero-subtext__bold {
+    color: #1EAFDE;
+}
+
+.our-services p {
+    font-family: "Ubuntu", sans-serif;
+    color: #939393;
+    font-size: 0.75em;
+    line-height: 18px;
+}
+
+.date__day {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+    color: white /* should be white, but for viewing purposes kept it black for now */
+}
+
+.date__month-year {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.5em;
+    color: white /* should be white, but for viewing purposes kept it black for now */
+}
+
+.info__subtext {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.7em;
+    color: white /* should be white, but for viewing purposes kept it black for now */
+}
+
+.portfolio h3, .blog h3 {
+    font-weight: 300;
+    text-align: left;
+    color: white;
+}
+
+.post__info p, .project__info p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+.web-footer p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.75em;
+    line-height: 18px;
+    color: black /* should be white, but for viewing purposes kept it black for now */
+}
+
+.footer-content__about p {
+    /* color should be white, but kept it black for now */
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0,75em;
+    line-height: 1em;
+}
+
+footer h3 {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.about__title {
+    color: #FFB901;
+}
+
+.insta__title {
+    color: #DE6262;
+}
+
+.mastodon__title {
+    color: #19B2DE;
+}
+
+.track__title {
+    color: black; /* should be white, but for viewing purposes kept it black for now */
+}
+
+.footer-content__mastodon p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.5em;
+    line-height: 14px;
+}
+
+.footer-content__mastodon a {
+    color: #1BADE6;
+    text-decoration: none;
+}
+
+/* ---------------- background/box colors ---------------- */
+/* .home-page__footer {
+    background-color: #0E2E4E;
+} */
+
+.menu__item {
+    width: 8.3em;
+    height: 6em;
+}
+
+.nav-bar__menu li:nth-child(1) {
+    background-color: #25C389;
+}
+
+.nav-bar__menu li:nth-child(2) {
+    background-color: #FFB901;
+}
+
+.nav-bar__menu li:nth-child(3) {
+    background-color: #DE6262;
+}
+
+.nav-bar__menu li:nth-child(4) {
+    background-color: #19B2DE;
+}
+
+.nav-bar__menu li:nth-child(5) {
+    background-color: #265787;
+}
+
+.boxes__colored {
+    width: 2em;
+    height: 2em;
+    margin: 0.6em;
+    border-radius: 2px;
+}
+
+.track__boxes div:nth-child(1) { /* I've tried two ways of using nth child, they both work, but i wanna ask wim later which one we should use */
+    background-color: #527CC4;
+}
+
+.track__boxes .boxes__colored:nth-child(2) {
+    background-color: #E46145;
+}
+
+.track__boxes div:nth-child(3) {
+    background-color: #00B0E2;
+}
+
+.track__boxes div:nth-child(4) {
+    background-color: #F6679C;
+}
+
+.track__boxes div:nth-child(5) {
+    background-color: #FFB901;
+}
+
+/* Hover */
+/* <div class="l-col-3 m-col-2 portfolio-content">
+          <div class="portfolio-content__project">
+            <img class="project__img" src="https://placehold.co/300x230" alt="greybox">
+            <div class="project__layer">
+              <div class="project__info">
+                <h3 class="info__title">Sample image Post</h3>
+                <p class="info__subtext">Photography</p>
+              </div>
+              <div class="info__grey-box"></div>
+            </div>
+          </div> */
+
+.portfolio-content__project {
+    position: relative;
+    width: 100%;
+}
+
+.project__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-content__project:hover .project__layer {
+    opacity: 0.8;
+}
+
+.project__layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #19B2DE;
+}
+
+.project__info {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.info__title {
+    line-height: 0.1em;
+}
+
+.portfolio .info__grey-box {
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-color: #1596BD;
+    bottom: 5%;
+    right: 10%;
+    /* 1596BD */
+}
+
+.info__grey-box {
+    width: 1.75em;
+    height: 1.75em;
+    background-color: #1596BD;
+}
+
+.home-page__footer {
+    background-color: #0E2E4E;
+}
 
 /* ==========================================================================
    Large screens and up
    ========================================================================== */
 
-@media screen and (min-width: 800px){
+   @media screen and (min-width: 800px){
 
     /* ------------------ Grid and Overall ------------------ */
 
@@ -167,9 +430,3 @@
 /* ==========================================================================
     Mobile and small screens
    ========================================================================== */
-
-   .nav-logo {
-    width: 177px;
-height: 37px;
-flex-shrink: 0;
-   }
