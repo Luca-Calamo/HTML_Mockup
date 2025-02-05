@@ -1,4 +1,5 @@
 /* ---------------- Typography ---------------- */
+
 h1, h2, h3 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -7,18 +8,18 @@ h1, h2, h3 {
 
 h1 {
     color: #3b3b3b;
-    font-size: 34px;
+    font-size: 2em;
     
 }
 
 h2 {
     color: #494949;
-    font-size: 28px;
+    font-size: 1.75em;
 }
 
 h3 {
     color: #545454;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -26,7 +27,7 @@ h4 {
     color: #a3a3a3;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     /*it's supposed to be Myriad Pro, but it's not in Google Fonts...*/
-    font-size: 12px;
+    font-size: 0.75em;
     text-align: center;
     font-weight: 500;
 }
@@ -34,7 +35,7 @@ h4 {
 .nav-bar__menu {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .nav-bar__menu a {
@@ -53,42 +54,43 @@ ul {
 .our-services p {
     font-family: "Ubuntu", sans-serif;
     color: #939393;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 18px;
 }
 
 .date__day {
     font-family: "Ubuntu", sans-serif;
-    font-size: 16px;
-    color: black /* should be white, but for viewing purposes kept it black for now */
+    font-size: 1em;
+    color: white /* should be white, but for viewing purposes kept it black for now */
 }
 
 .date__month-year {
     font-family: "Ubuntu", sans-serif;
-    font-size: 8px;
-    color: black /* should be white, but for viewing purposes kept it black for now */
+    font-size: 0.5em;
+    color: white /* should be white, but for viewing purposes kept it black for now */
 }
 
 .info__subtext {
     font-family: "Ubuntu", sans-serif;
-    font-size: 11px;
-    color: black /* should be white, but for viewing purposes kept it black for now */
+    font-size: 0.7em;
+    color: white /* should be white, but for viewing purposes kept it black for now */
 }
 
 .portfolio h3, .blog h3 {
     font-weight: 300;
     text-align: left;
+    color: white;
 }
 
 .post__info p, .project__info p {
     font-family: "Ubuntu", sans-serif;
-    font-size: 11px;
+    font-size: 0.7em;
     font-weight: 400;
 }
 
 .web-footer p {
     font-family: "Ubuntu", sans-serif;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 18px;
     color: black /* should be white, but for viewing purposes kept it black for now */
 }
@@ -96,12 +98,12 @@ ul {
 .footer-content__about p {
     /* color should be white, but kept it black for now */
     font-family: "Ubuntu", sans-serif;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0,75em;
+    line-height: 1em;
 }
 
 footer h3 {
-    font-size: 15px;
+    font-size: 0.9em;
     font-weight: 500;
 }
 
@@ -124,7 +126,7 @@ footer h3 {
 .footer-content__mastodon p {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 9px;
+    font-size: 0.5em;
     line-height: 14px;
 }
 
@@ -139,8 +141,8 @@ footer h3 {
 } */
 
 .menu__item {
-    width: 134px;
-    height: 96px;
+    width: 8.3em;
+    height: 6em;
 }
 
 .nav-bar__menu li:nth-child(1) {
@@ -164,9 +166,9 @@ footer h3 {
 }
 
 .boxes__colored {
-    width: 32px;
-    height: 32px;
-    margin: 10px;
+    width: 2em;
+    height: 2em;
+    margin: 0.6em;
     border-radius: 2px;
 }
 
@@ -190,80 +192,240 @@ footer h3 {
     background-color: #FFB901;
 }
 
+/* Hover */
+/* <div class="l-col-3 m-col-2 portfolio-content">
+          <div class="portfolio-content__project">
+            <img class="project__img" src="https://placehold.co/300x230" alt="greybox">
+            <div class="project__layer">
+              <div class="project__info">
+                <h3 class="info__title">Sample image Post</h3>
+                <p class="info__subtext">Photography</p>
+              </div>
+              <div class="info__grey-box"></div>
+            </div>
+          </div> */
 
-/* ---------------- body grid layout ---------------- */
-.page-home {
-    display: grid;
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: repeat(8, auto);
+.portfolio-content__project {
+    position: relative;
+    width: 100%;
 }
 
-.web-header{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+.project__img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.page-home__content {
-    grid-column: 2 / 3;
-    grid-row: 2 / 7;
-    display: grid;
-    grid-template-rows: repeat(7, auto);
+.portfolio-content__project:hover .project__layer {
+    opacity: 0.8;
 }
 
-.page-home__footer {
-    grid-column: 2 / 3;
-    grid-row: 7 / 8;
+.project__layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #19B2DE;
 }
 
-/*---------------- main content grid layout ----------------*/
-
-.hero-banner {
-    grid-row: 1 / 2;
+.project__info {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
 }
 
-.page-home__intro{
-    grid-row: 2 / 3;
+.info__title {
+    line-height: 0.1em;
 }
 
-.services {
-    grid-row: 3 / 4;
+.portfolio .info__grey-box {
+    position: absolute;
+    width: 1.75em;
+    height: 1.75em;
+    background-color: #1596BD;
+    bottom: 5%;
+    right: 10%;
+    /* 1596BD */
 }
 
-.blog {
-    grid-row: 4 / 5;
+
+.info__grey-box {
+    width: 1.75em;
+    height: 1.75em;
+    background-color: #1596BD;
 }
 
-.portfolio {
-    grid-row: 5 / 6;
+/* ==========================================================================
+   Large screens and up
+   ========================================================================== */
+
+   @media screen and (min-width: 800px){
+
+    /* ------------------ Grid and Overall ------------------ */
+
+    .l-row-span {
+        display: grid;
+        grid-template-rows: 1fr;
+        margin: 0 12%;
+    }
+
+    .l-col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .l-col-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2%;
+    }
+
+    .l-col-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5%;
+    }
+
+    .l-col-5 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5%;
+    }
+
+    .l-col-6 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 5%;
+    }
+
+    /* ------------------ Header section ------------------ */
+
+    .nav-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        width: 177px;
+    }
+
+    .nav-bar {
+        width: 60%;
+    }
+
+    .nav-bar__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .meu_item {
+        display: flex;
+    }
+
+    /* ------------------ Hero Section ------------------ */
+
+    .hero-banner {
+        background-color: rgb(218, 218, 218);
+    }
+
+    /* remove unrelated layout code outside of media query */
+    .hero-content {
+        position: relative;
+    }
+
+    .hero-minions {
+        width: 100%;
+        height: 520px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .hero-card {
+        position: absolute;
+        left: 60px;
+        bottom: 50px;
+    }
+
+    /* ------------------ Home Page Intro Section ------------------ */
+
+    .hero-title {
+
+    }
+
+    /* ------------------ Services Section ------------------ */
+
+    /* ------------------ Blog Section ------------------ */
+
+    /* ------------------ Portfolio Section ------------------ */
+
+    /* ------------------ Clients Section ------------------ */
+
+    /* ---------------- Footer General Section ---------------- */
+
+    /* ---------------- Footer Intro Section ---------------- */
+
+    .footer-intro {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
-.clients {
-    grid-row: 6 / 7;
+/* ==========================================================================
+   Medium and Tables screens
+   ========================================================================== */
+
+@media screen and (min-width: 420px) and (max-width: 800px) {
+    /* ------------------ Grid and Overall ------------------ */
+
+    .l-row-span {
+        display: grid;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .m-col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .m-col-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+    }
+
+    .m-col-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 24px;
+    }
+
+    /* ------------------ Header section ------------------ */
+
+    /* ------------------ Hero Section ------------------ */
+
+    /* ------------------ Home Page Intro Section ------------------ */
+
+    /* ------------------ Services Section ------------------ */
+
+    /* ------------------ Blog Section ------------------ */
+
+    /* ------------------ Portfolio Section ------------------ */
+
+    /* ------------------ Clients Section ------------------ */
+
+    /* ---------------- Footer General Section ---------------- */
+
+    /* ---------------- Footer Intro Section ---------------- */
 }
 
-/* ---------------- all row layout ---------------- */
-.row {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-/* ----------- all column layout ---------------- */
-.col1 {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.col2 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-}
-
-.col3 {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-}
-
-.col4 {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-}
+/* ==========================================================================
+    Mobile and small screens
+   ========================================================================== */
