@@ -252,11 +252,14 @@ footer h3 {
     /* 1596BD */
 }
 
-
 .info__grey-box {
     width: 1.75em;
     height: 1.75em;
     background-color: #1596BD;
+}
+
+.home-page__footer {
+    background-color: #0E2E4E;
 }
 
 /* ==========================================================================
@@ -354,9 +357,7 @@ footer h3 {
 
     /* ------------------ Home Page Intro Section ------------------ */
 
-    .hero-title {
-
-    }
+    .hero-title {}
 
     /* ------------------ Services Section ------------------ */
 
