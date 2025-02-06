@@ -1,4 +1,4 @@
-/* ---------- Typography ----------------  */
+/* ------------------- Typography General-------------------------  */
 
 h1,
 h2,
@@ -11,7 +11,6 @@ h3 {
 h1 {
     color: #3b3b3b;
     font-size: 2em;
-
 }
 
 h2 {
@@ -34,24 +33,57 @@ h4 {
     font-weight: 500;
 }
 
+/* ------------------- Nav Header -------------------------  */
 
 .nav-bar__menu {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 1em;
+    
 }
 
 .nav-bar__menu a {
     color: white;
     text-decoration: none;
     white-space: nowrap;
-    /* overflow: hidden;
-    text-overflow: ellipsis; */
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 ul {
     list-style-type: none;
 }
+
+.menu__item {
+    width: 100%;
+    height: 68px;
+    padding: 14px 0 14px 14px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-bar__menu li:nth-child(1) {
+    background-color: #25C389;
+}
+
+.nav-bar__menu li:nth-child(2) {
+    background-color: #FFB901;
+}
+
+.nav-bar__menu li:nth-child(3) {
+    background-color: #DE6262;
+}
+
+.nav-bar__menu li:nth-child(4) {
+    background-color: #19B2DE;
+}
+
+.nav-bar__menu li:nth-child(5) {
+    background-color: #265787;
+}
+
+/* ------------------------- Hero Banner Section -------------------------  */
 
 .hero-card {
     display: flex;
@@ -92,12 +124,32 @@ margin: 2px;
     color: #1EAFDE;
 }
 
+.hero-banner {
+    background-color: rgb(218, 218, 218);
+}
+
+/* remove unrelated layout code outside of media query */
+.hero-content {
+    position: relative;
+}
+
+.hero-minions {
+    width: 100%;
+    height: 520px;
+    display: block;
+    object-fit: cover;
+}
+
+/* ------------------------- Our Services Section -------------------------  */
+
 .our-services p {
     font-family: "Ubuntu", sans-serif;
     color: #939393;
     font-size: 0.75em;
     line-height: 18px;
 }
+
+/* ------------------------- Blog Section -------------------------  */
 
 .date__day {
     font-family: "Ubuntu", sans-serif;
@@ -128,115 +180,7 @@ margin: 2px;
     font-weight: 400;
 }
 
-.web-footer p {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 0.75em;
-    line-height: 18px;
-    color: black
-        /* should be white, but for viewing purposes kept it black for now */
-}
-
-.footer-content__about p {
-    /* color should be white, but kept it black for now */
-    font-family: "Ubuntu", sans-serif;
-    font-size: 0, 75em;
-    line-height: 1em;
-}
-
-footer h3 {
-    font-size: 0.9em;
-    font-weight: 500;
-}
-
-.about__title {
-    color: #FFB901;
-}
-
-.insta__title {
-    color: #DE6262;
-}
-
-.mastodon__title {
-    color: #19B2DE;
-}
-
-.track__title {
-    color: black;
-    /* should be white, but for viewing purposes kept it black for now */
-}
-
-.footer-content__mastodon p {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 0.5em;
-    line-height: 14px;
-}
-
-.footer-content__mastodon a {
-    color: #1BADE6;
-    text-decoration: none;
-}
-
-/* ---------------- background/box colors ---------------- */
-/* .home-page__footer {
-    background-color: #0E2E4E;
-} */
-
-.menu__item {
-    width: 100%;
-    height: 68px;
-    padding: 14px 0 14px 14px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.nav-bar__menu li:nth-child(1) {
-    background-color: #25C389;
-}
-
-.nav-bar__menu li:nth-child(2) {
-    background-color: #FFB901;
-}
-
-.nav-bar__menu li:nth-child(3) {
-    background-color: #DE6262;
-}
-
-.nav-bar__menu li:nth-child(4) {
-    background-color: #19B2DE;
-}
-
-.nav-bar__menu li:nth-child(5) {
-    background-color: #265787;
-}
-
-.boxes__colored {
-    width: 2em;
-    height: 2em;
-    margin: 0.6em;
-    border-radius: 2px;
-}
-
-.track__boxes div:nth-child(1) {
-    /* I've tried two ways of using nth child, they both work, but i wanna ask wim later which one we should use */
-    background-color: #527CC4;
-}
-
-.track__boxes .boxes__colored:nth-child(2) {
-    background-color: #E46145;
-}
-
-.track__boxes div:nth-child(3) {
-    background-color: #00B0E2;
-}
-
-.track__boxes div:nth-child(4) {
-    background-color: #F6679C;
-}
-
-.track__boxes div:nth-child(5) {
-    background-color: #FFB901;
-}
+/* ------------------------- Portfolio Section -------------------------  */
 
 .portfolio-content__project {
     position: relative;
@@ -291,11 +235,8 @@ footer h3 {
     background-color: #1596BD;
 }
 
-.home-page__footer {
-    background-color: #0E2E4E;
-}
+/* ------------------------- Our Clients Section -------------------------  */
 
-/* Clients styling */
 .our-clients {
     display: flex;
     justify-content: center;
@@ -316,21 +257,116 @@ footer h3 {
     width: 160px;
 }
 
-.hero-banner {
-    background-color: rgb(218, 218, 218);
+/* ------------------------- Footer Section -------------------------  */
+
+.web-footer p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.75em;
+    line-height: 18px;
+    color: white;
 }
 
-/* remove unrelated layout code outside of media query */
-.hero-content {
+.footer-content__about p {
+    /* color should be white, but kept it black for now */
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0, 75em;
+    line-height: 1em;
+}
+
+footer h3 {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.home-page__footer {
+    background-color: #0E2E4E;
+}
+
+.about__title {
+    color: #FFB901;
+}
+
+.insta__title {
+    color: #DE6262;
+}
+
+.mastodon__title {
+    color: #19B2DE;
+}
+
+.track__title {
+    color: white;
+}
+
+.footer-content__mastodon p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.5em;
+    line-height: 14px;
+}
+
+.footer-content__mastodon a {
+    color: #1BADE6;
+    text-decoration: none;
+}
+
+.boxes__colored {
+    width: 2em;
+    height: 2em;
+    border-radius: 2px;
+}
+
+.track__boxes div:nth-child(1) {
+    /* I've tried two ways of using nth child, they both work, but i wanna ask wim later which one we should use */
+    background-color: #527CC4;
+}
+
+.track__boxes .boxes__colored:nth-child(2) {
+    background-color: #E46145;
+}
+
+.track__boxes div:nth-child(3) {
+    background-color: #00B0E2;
+}
+
+.track__boxes div:nth-child(4) {
+    background-color: #F6679C;
+}
+
+.track__boxes div:nth-child(5) {
+    background-color: #FFB901;
+}
+
+.footer-intro__alf{
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+}
+
+.footer-intro {
+    display: flex;
+    gap: 24px;
     position: relative;
 }
 
-.hero-minions {
-    width: 100%;
-    height: 520px;
-    display: block;
-    object-fit: cover;
+.footer-intro hr{
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+    background: #FFB901;
+    width: 118px;
+    height: 2px;
 }
+
+.track__boxes, .insta__pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+
+/* ------------------------------------------------------------------------ */
 
 
 /* ==========================================================================
@@ -370,6 +406,11 @@ footer h3 {
     .l-col-6 {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .l-col-12 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
     }
 
     /* ------------------ Header section ------------------ */
@@ -453,20 +494,20 @@ footer h3 {
     /* ---------------- Footer General Section ---------------- */
 
     /* ---------------- Footer Intro Section ---------------- */
-
-    .footer-intro {
-        display: flex;
-        gap: 24px;
-        position: relative;
+    .footer-content__about {
+        grid-column: 1 / 4;
     }
 
-    .footer-intro hr{
-        position: absolute;
-        bottom: 0px;
-        left: 200px;
-        background: #FFB901;
-        width: 118px;
-        height: 2px;
+    .footer-content__insta {
+        grid-column: 4 / 7;
+    }
+
+    .footer-content__mastodon {
+        grid-column: 7 / 11;
+    }
+
+    .footer-content__track {
+        grid-column: 11 / 13;
     }
 }
 
@@ -484,6 +525,11 @@ footer h3 {
         justify-content: center;
     }
 
+    .m-row-span{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
     .m-col-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -497,6 +543,11 @@ footer h3 {
     .m-col-4 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .m-col-6 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
     }
 
     /* ------------------ Main Section ------------------ */
@@ -574,13 +625,32 @@ footer h3 {
     /* ---------------- Footer General Section ---------------- */
 
     /* ---------------- Footer Intro Section ---------------- */
+    .footer-content__about {
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+    }
+    
+    .footer-content__insta {
+        grid-row: 1 / 2;
+        grid-column: 4 / 7;
+    }
+    
+    .footer-content__mastodon {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+    }
+    
+    .footer-content__track {
+        grid-row: 2 / 3;
+        grid-column: 5 / 7;
+    }
 
 }
 
 /* ==========================================================================
     Mobile and small screens
    ========================================================================== */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
 
     /* ----------------- Grid and Overall ------------------ */
 
@@ -588,6 +658,11 @@ footer h3 {
         display: grid;
         grid-template-rows: 1fr;
         margin: 0 2%;
+    }
+
+    .s-row-span {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
 
     /* ------------------ Nav Header ------------------ */
@@ -611,6 +686,14 @@ footer h3 {
     /* ------------------ Footer Section ------------------ */
     .footer-content__about, .footer-content__insta{
         display: none;
+    }
+
+    .footer-content__track{
+        order: 1;
+    }
+
+    .footer-content__mastodon{
+        order: 2;
     }
 }
 
