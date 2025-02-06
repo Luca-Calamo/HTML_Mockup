@@ -54,14 +54,14 @@ ul {
 }
 
 .hero-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  left: 60px;
-  bottom: 150px;
-  gap: 0px;
-} 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    left: 60px;
+    bottom: 150px;
+    gap: 0px;
+}
 
 /* .hero-card__text {
 display: flex;
@@ -75,17 +75,17 @@ margin: 2px;
 
 .hero-card :first-child {
     background-color: white;
-    border-left:  7.7px solid #186AA2
+    border-left: 7.7px solid #186AA2
 }
 
 .hero-card :nth-child(2) {
     background-color: white;
-    border-left:  7.7px solid#DE6262;
+    border-left: 7.7px solid#DE6262;
 }
 
 .hero-card :nth-child(3) {
     background-color: white;
-    border-left:  7.7px solid#FFB901
+    border-left: 7.7px solid#FFB901
 }
 
 .hero-subtext__bold {
@@ -302,12 +302,12 @@ footer h3 {
 }
 
 /* ==========================================================================
-   Large screens and up
+    Large screens and up
    ========================================================================== */
 
 @media screen and (min-width: 800px) {
 
-    /* ------------------ Grid and Overall ------------------ */
+    /* ----------------- Grid and Overall ------------------ */
 
     .l-row-span {
         display: grid;
@@ -373,20 +373,36 @@ footer h3 {
 
     /* ------------------ Hero Section ------------------ */
 
-    .hero-banner {
-        background-color: rgb(218, 218, 218);
+    .hero-card {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 55px;
+        bottom: 135px;
+        gap: 6px;
     }
 
-    /* remove unrelated layout code outside of media query */
-    .hero-content {
-        position: relative;
+    .hero-card__text {
+        display: flex;
+        align-items: center;
+        margin: 0%;
+        padding: 0 0 0 20px;
+        height: 64px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
     }
 
-    .hero-minions {
-        width: 100%;
-        height: 520px;
-        display: block;
-        object-fit: cover;
+    .hero-card :first-child {
+        width: 6em;
+    }
+
+    .hero-card :nth-child(2) {
+        width: 8.5em;
+    }
+
+    .hero-card :nth-child(3) {
+        width: 12em;
     }
 
 
@@ -413,7 +429,7 @@ footer h3 {
 }
 
 /* ==========================================================================
-   Medium and Tables screens
+    Medium and Tables screens
    ========================================================================== */
 
 @media screen and (min-width: 420px) and (max-width: 800px) {
@@ -442,7 +458,7 @@ footer h3 {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 24px;
     }
-}
+
     /* ------------------ Header section ------------------ */
     .nav-header {
         display: flex;
@@ -468,88 +484,37 @@ footer h3 {
     }
 
     /* ------------------ Hero Section ------------------ */
-    @media screen and (max-width: 1920px)
-   
     .hero-card {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         position: absolute;
-        left: 60px;
-        bottom: 150px;
-        gap: 0px;
-      } 
-      
-      .hero-card__text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      flex-shrink: 0;
-      flex-wrap: wrap;
-      margin: 2px;
-      } 
-      
-      .hero-card :first-child {
-          width: 10.7em;
-          height: 4em;
-      }
-      
-      .hero-card :nth-child(2) {
-          width: 14.75em;
-          height: 4em;
-      }
-      
-      .hero-card :nth-child(3) {
-          width: 19.7em;
-          height: 64px;
-      }
+        left: 32px;
+        bottom: 64px;
+        gap: 6px;
+    }
 
-      @media screen and (min-width: 480px) and (max-width: 768px) {
-   
-      .hero-card {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          position: absolute;
-          left: 60px;
-          bottom: 150px;
-          gap: 0px;
-        } 
-        
-        .hero-card__text {
+    .hero-card__text {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        flex-shrink: 0;
-        flex-wrap: wrap;
-        margin: 2px;
-        } 
-        
-        .hero-card :first-child {
-            width: 8.7em;
-            height: 2.75em;
-        }
-        
-        .hero-card :nth-child(2) {
-            width: 12em;
-            height: 2.75em;
-        }
-        
-        .hero-card :nth-child(3) {
-            width: 16em;
-            height: 2.75em;
-        }
+        align-items: center;
+        margin: 0%;
+        padding: 0 0 0 20px;
+        height: 44px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
     }
 
-    @media (max-width: 480px) {
-        .hero-card {
-            display: none;
-        }
-    
+    .hero-card :first-child {
+        width: 6em;
     }
-    
+
+    .hero-card :nth-child(2) {
+        width: 8.5em;
+    }
+
+    .hero-card :nth-child(3) {
+        width: 12em;
+    }
 
     /* ------------------ Home Page Intro Section ------------------ */
 
@@ -565,6 +530,23 @@ footer h3 {
 
     /* ---------------- Footer Intro Section ---------------- */
 
+}
+
+.hero-banner {
+    background-color: rgb(218, 218, 218);
+}
+
+/* remove unrelated layout code outside of media query */
+.hero-content {
+    position: relative;
+}
+
+.hero-minions {
+    width: 100%;
+    height: 520px;
+    display: block;
+    object-fit: cover;
+}
 
 /* ==========================================================================
     Mobile and small screens
@@ -573,4 +555,11 @@ footer h3 {
     .nav-bar {
         display: none;
     }
+
+    .hero-card {
+        display: none;
+    }
 }
+
+/* @media screen and (min-width: 480px) and (max-width: 768px) {}
+@media (max-width: 480px)  {} */
