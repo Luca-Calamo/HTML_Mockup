@@ -32,6 +32,7 @@ h4 {
     font-weight: 500;
 }
 
+
 .nav-bar__menu {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -45,6 +46,41 @@ h4 {
 
 ul {
     list-style-type: none;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  left: 60px;
+  bottom: 150px;
+  gap: 0px;
+} 
+
+/* .hero-card__text {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+flex-shrink: 0;
+flex-wrap: wrap;
+margin: 2px;
+}  */
+
+.hero-card :first-child {
+    background-color: white;
+    border-left:  7.7px solid #186AA2
+}
+
+.hero-card :nth-child(2) {
+    background-color: white;
+    border-left:  7.7px solid#DE6262;
+}
+
+.hero-card :nth-child(3) {
+    background-color: white;
+    border-left:  7.7px solid#FFB901
 }
 
 .hero-subtext__bold {
@@ -349,11 +385,6 @@ footer h3 {
         object-fit: cover;
     }
 
-    .hero-card {
-        position: absolute;
-        left: 60px;
-        bottom: 50px;
-    }
 
     /* ------------------ Home Page Intro Section ------------------ */
 
@@ -407,10 +438,92 @@ footer h3 {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 24px;
     }
-
+}
     /* ------------------ Header section ------------------ */
 
     /* ------------------ Hero Section ------------------ */
+    @media screen and (max-width: 1920px)
+   
+    .hero-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        left: 60px;
+        bottom: 150px;
+        gap: 0px;
+      } 
+      
+      .hero-card__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      margin: 2px;
+      } 
+      
+      .hero-card :first-child {
+          width: 10.7em;
+          height: 4em;
+      }
+      
+      .hero-card :nth-child(2) {
+          width: 14.75em;
+          height: 4em;
+      }
+      
+      .hero-card :nth-child(3) {
+          width: 19.7em;
+          height: 64px;
+      }
+
+      @media screen and (min-width: 480px) and (max-width: 768px) {
+   
+      .hero-card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          position: absolute;
+          left: 60px;
+          bottom: 150px;
+          gap: 0px;
+        } 
+        
+        .hero-card__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        margin: 2px;
+        } 
+        
+        .hero-card :first-child {
+            width: 8.7em;
+            height: 2.75em;
+        }
+        
+        .hero-card :nth-child(2) {
+            width: 12em;
+            height: 2.75em;
+        }
+        
+        .hero-card :nth-child(3) {
+            width: 16em;
+            height: 2.75em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-card {
+            display: none;
+        }
+    
+    }
+    
 
     /* ------------------ Home Page Intro Section ------------------ */
 
@@ -425,8 +538,11 @@ footer h3 {
     /* ---------------- Footer General Section ---------------- */
 
     /* ---------------- Footer Intro Section ---------------- */
-}
+
 
 /* ==========================================================================
     Mobile and small screens
    ========================================================================== */
+
+
+
