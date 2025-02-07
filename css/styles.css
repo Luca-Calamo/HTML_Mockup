@@ -942,11 +942,17 @@ footer h3 {
     font-size: 0.7em;
 }
 
-#submit {
+.submit {
+    display: flex;
+    justify-content: center;
     background-color: #FFB901;
     height: 2rem;
     width: 2rem;
     flex-shrink: 0;
+}
+
+.submit--icon {
+    margin: auto;
 }
 
 .form-input {
