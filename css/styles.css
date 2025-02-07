@@ -568,7 +568,7 @@ footer h3 {
 
     /* ------------------ Home Page Intro Section ------------------ */
 
-    .hero-title {}
+
 
     /* ------------------ Services Section ------------------ */
 
@@ -789,6 +789,32 @@ footer h3 {
         order: 2;
     }
 }
+
+#email {
+    width: 9em;
+    height: 2em;
+    background-color: #DE6262;
+}
+
+#email::placeholder {
+    color: white;
+    font-size: 0.7em;
+
+}
+
+#submit {
+    background-color: #FFB901;
+    height: 2rem;
+    width: 2rem;
+    flex-shrink: 0;
+}
+
+.form-input {
+display: flex;
+justify-content:flex-start ;
+}
+
+
 
 /* @media screen and (min-width: 480px) and (max-width: 768px) {}
 @media (max-width: 480px)  {} */
