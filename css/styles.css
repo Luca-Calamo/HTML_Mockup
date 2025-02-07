@@ -392,12 +392,12 @@ footer h3 {
     display: block;
     width: 100%;
     height: auto;
-  
+}
 .footer-intro__alf{
     width: 96px;
     height: 96px;
     object-fit: cover;
-
+}
 
 .footer-intro {
     display: flex;
