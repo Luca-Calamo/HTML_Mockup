@@ -242,7 +242,7 @@ margin: 2px;
     line-height: 0.1em;
 }
 
-.portfolio .info__grey-box {
+.portfolio .floating-box {
     position: absolute;
     width: 1.75em;
     height: 1.75em;
@@ -252,7 +252,7 @@ margin: 2px;
     /* 1596BD */
 }
 
-.info__grey-box {
+.floating-box {
     width: 1.75em;
     height: 1.75em;
     background-color: #1596BD;
@@ -315,7 +315,7 @@ margin: 2px;
     margin: 0;
 }
 
-.post__info .info__grey-box {
+.post__info .floating-box {
     position: absolute;
     right: 10%;
     bottom: 10%;
