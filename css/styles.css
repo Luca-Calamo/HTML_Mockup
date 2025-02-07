@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-    color: #545454;
+    color: white;
     font-size: 1em;
     font-weight: bold;
 }
@@ -148,6 +148,18 @@ margin: 2px;
 }
 
 /* ------------------------- Our Services Section -------------------------  */
+.services-content h3 {
+    color: #545454;
+}
+
+.services-content div {
+    margin: 1em;
+}
+
+.services-content img {
+    display: block;
+    margin: auto;
+}
 
 .our-services p {
     font-family: "Ubuntu", sans-serif;
@@ -156,7 +168,11 @@ margin: 2px;
     line-height: 18px;
 }
 
+
+
 /* ------------------------- Blog Section -------------------------  */
+
+
 
 .date__day {
     font-family: "Ubuntu", sans-serif;
@@ -189,6 +205,7 @@ margin: 2px;
 .portfolio-content__project {
     position: relative;
     width: 100%;
+    margin: 1rem;
 }
 
 .project__img {
@@ -336,6 +353,8 @@ margin: 2px;
     width: 160px;
 }
 
+
+
 /* ------------------------- Footer Section -------------------------  */
 
 .web-footer p {
@@ -457,6 +476,53 @@ footer h3 {
 .track__boxes div:nth-child(5) {
     background-color: #FFB901;
 }
+
+/*------------- Blog Thumbnails -------------*/
+
+._img__placeholder{
+    object-fit: cover;
+}
+
+.post__date {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #D8605F;
+    width: 3.5rem;
+    height: 2.1rem;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.post__date p {
+   margin: 0;
+}
+
+.post__info {
+    position: absolute;
+    background-color: #1596BD;
+    width: 20rem;
+    height: 3rem;
+}
+
+.post__info .info__grey-box {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+/* Portfolio Thumbnails hovers */
+
+.portfolio-content__project {
+    position: relative;
+    width: 100%;
+}
+
+.project__img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
 
 .footer-intro__alf {
     width: 96px;
@@ -623,7 +689,7 @@ footer h3 {
 
     /* ------------------ Home Page Intro Section ------------------ */
 
-    .hero-title {}
+
 
     /* ------------------ Services Section ------------------ */
 
@@ -864,3 +930,31 @@ footer h3 {
         order: 2;
     }
 }
+
+#email {
+    width: 9em;
+    height: 2em;
+    background-color: #DE6262;
+}
+
+#email::placeholder {
+    color: white;
+    font-size: 0.7em;
+}
+
+#submit {
+    background-color: #FFB901;
+    height: 2rem;
+    width: 2rem;
+    flex-shrink: 0;
+}
+
+.form-input {
+display: flex;
+justify-content:flex-start ;
+}
+
+
+
+/* @media screen and (min-width: 480px) and (max-width: 768px) {}
+@media (max-width: 480px)  {} */
