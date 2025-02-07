@@ -16,6 +16,7 @@ h1 {
 h2 {
     color: #494949;
     font-size: 1.75em;
+    margin: 0%;
 }
 
 h3 {
@@ -31,6 +32,18 @@ h4 {
     font-size: 0.75em;
     text-align: center;
     font-weight: 500;
+}
+
+/* ----------------------Main, Body, Footer Sections------------------------ */
+
+.page-home{
+    margin: 0;
+}
+
+.page-home__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 /* ------------------- Nav Header -------------------------  */
@@ -299,22 +312,27 @@ footer h3 {
 
 .home-page__footer {
     background-color: #0E2E4E;
+    padding-top: 32px;
 }
 
 .about__title {
     color: #FFB901;
+    width: 232px;
 }
 
 .insta__title {
     color: #DE6262;
+    width: 232px;
 }
 
 .mastodon__title {
     color: #19B2DE;
+    width: 232px;
 }
 
 .track__title {
     color: white;
+    width: 146px;
 }
 
 .footer-content__mastodon p {
@@ -402,11 +420,12 @@ footer h3 {
     width: 100%;
     height: auto;
 } 
-
-.footer-intro__alf{
+  
+.footer-intro__alf {
     width: 96px;
     height: 96px;
     object-fit: cover;
+    border-radius: 100%;
 }
 
 .footer-intro {
@@ -417,7 +436,7 @@ footer h3 {
 
 .footer-intro hr{
     position: absolute;
-    bottom: 0px;
+    bottom: -12px;
     left: 120px;
     background: #FFB901;
     width: 118px;
@@ -431,6 +450,17 @@ footer h3 {
     gap: 6px;
 }
 
+.pics__minion-selfie {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.about__title, .insta__title, .mastodon__title, .track__title {
+    text-align: left;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid white;
+}
 
 /* ------------------------------------------------------------------------ */
 
@@ -477,6 +507,7 @@ footer h3 {
     .l-col-12 {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
     }
 
     /* ------------------ Header section ------------------ */
@@ -488,7 +519,6 @@ footer h3 {
         align-items: bottom;
     }
 
-    /* move sections out of media query if they don't affect responsive layout */
     .nav-logo {
         width: 177px;
     }
@@ -547,7 +577,7 @@ footer h3 {
 
     /* ------------------ Home Page Intro Section ------------------ */
 
-    .hero-title {}
+
 
     /* ------------------ Services Section ------------------ */
 
@@ -575,13 +605,17 @@ footer h3 {
     .footer-content__track {
         grid-column: 11 / 13;
     }
+
+    .footer-content{
+        
+    }
 }
 
 /* ==========================================================================
     Medium and Tables screens
    ========================================================================== */
 
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
     /* ------------------ Grid and Overall ------------------ */
 
     .l-row-span {
@@ -614,6 +648,7 @@ footer h3 {
     .m-col-6 {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
     }
 
     /* ------------------ Main Section ------------------ */
@@ -756,12 +791,39 @@ footer h3 {
 
     .footer-content__track{
         order: 1;
+        padding: 0 0 0 24px;
     }
 
     .footer-content__mastodon{
         order: 2;
     }
 }
+
+#email {
+    width: 9em;
+    height: 2em;
+    background-color: #DE6262;
+}
+
+#email::placeholder {
+    color: white;
+    font-size: 0.7em;
+
+}
+
+#submit {
+    background-color: #FFB901;
+    height: 2rem;
+    width: 2rem;
+    flex-shrink: 0;
+}
+
+.form-input {
+display: flex;
+justify-content:flex-start ;
+}
+
+
 
 /* @media screen and (min-width: 480px) and (max-width: 768px) {}
 @media (max-width: 480px)  {} */
