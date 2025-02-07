@@ -355,7 +355,64 @@ footer h3 {
     background-color: #FFB901;
 }
 
-.footer-intro__alf{
+/* Blog Thumbnails */
+
+.blog-content__post {
+    position: relative;
+    width: 100%;
+}
+
+.post__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.post__date {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #D8605F;
+    width: 56px;
+    height: 34px;
+    text-align: center;
+}
+
+.post__date p{
+    margin: 0;
+}
+
+.date__day {
+    line-height: 1em;
+}
+
+.post__info {
+    position: absolute;
+    background-color: #1596BD;
+    width: 100%;
+    height: 10%;
+}
+
+.post__info .info__grey-box {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+/* Portfolio Thumbnails hovers */
+
+.portfolio-content__project {
+    position: relative;
+    width: 100%;
+}
+
+.project__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.footer-intro__alf {
     width: 96px;
     height: 96px;
     object-fit: cover;
