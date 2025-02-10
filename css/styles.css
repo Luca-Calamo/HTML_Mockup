@@ -10,26 +10,25 @@ h3 {
 
 h1 {
     color: #3b3b3b;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h2 {
     color: #494949;
-    font-size: 1.75em;
+    font-size: 1.75rem;
     margin: 0%;
 }
 
 h3 {
     color: white;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1rem;
 }
 
 h4 {
     color: #a3a3a3;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     /*it's supposed to be Myriad Pro, but it's not in Google Fonts...*/
-    font-size: 0.75em;
+    font-size: 0.75rem;
     text-align: center;
     font-weight: 500;
 }
@@ -43,21 +42,21 @@ h4 {
 .page-home__content {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 
 /* ------------------- Nav Header -------------------------  */
 
 .nav-logo {
-    width: 177px;
-    margin: 12px 0;
+    width: 11rem;
+    margin: 0.75rem 0;
 }
 
 
 .nav-bar__menu a {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     /* white-space: nowrap; */
@@ -73,7 +72,7 @@ ul {
 .menu__item {
     width: 100%;
     height: auto;
-    padding: 14px 0 14px 14px;
+    padding: 0.9rem 0 0.9rem 0.9rem;
     display: flex;
     align-items: flex-end;
 }
@@ -105,9 +104,9 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    left: 60px;
-    bottom: 150px;
-    gap: 0px;
+    left: 3.75rem;
+    bottom: 9.4rem;
+    gap: 0;
 }
 
 /* .hero-card__text {
@@ -122,17 +121,17 @@ margin: 2px;
 
 .hero-card :first-child {
     background-color: white;
-    border-left: 7.7px solid #186AA2
+    border-left: 0.5rem solid #186AA2
 }
 
 .hero-card :nth-child(2) {
     background-color: white;
-    border-left: 7.7px solid#DE6262;
+    border-left: 0.5rem solid#DE6262;
 }
 
 .hero-card :nth-child(3) {
     background-color: white;
-    border-left: 7.7px solid#FFB901
+    border-left: 0.5rem solid#FFB901
 }
 
 .hero-subtext__bold {
@@ -152,6 +151,7 @@ margin: 2px;
 /* ------------------------- Our Services Section -------------------------  */
 .services-content h3 {
     color: #545454;
+    font-weight: bold;
 }
 
 .services-content--bulb,
@@ -172,89 +172,85 @@ margin: 2px;
 .our-services p {
     font-family: "Ubuntu", sans-serif;
     color: #939393;
-    font-size: 0.75em;
-    line-height: 18px;
+    font-size: 0.75rem;
+    line-height: 1.12rem;
 }
 
-
-
-/* ------------------------- Blog Section -------------------------  */
-
-
+/* ------------------------- Blog & Portfolio Typography  -------------------------  */
 
 .date__day {
     font-family: "Ubuntu", sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     color: white
 }
 
 .date__month-year {
     font-family: "Ubuntu", sans-serif;
-    font-size: 0.5em;
+    font-size: 0.5rem;
     color: white
 }
 
 .info__subtext {
     font-family: "Ubuntu", sans-serif;
-    font-size: 0.7em;
+    font-size: 0.7rem;
+    font-weight: 300;
     color: white
 }
 
+/*---------------- Blog Thumbnails ----------------*/
 
-.post__info p,
-.project__info p {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 0.7em;
-    font-weight: 400;
-}
-
-/* ------------------------- Portfolio Section -------------------------  */
-
-.portfolio-content__project {
-    position: relative;
-    width: 100%;
-    margin: 1rem;
-}
-
-.project__img {
+.blog-content__post {
     display: block;
-    width: 100%;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
 }
 
-.portfolio-content__project:hover .project__layer {
-    opacity: 0.8;
-}
-
-.project__layer {
+.post__date {
+    display: flex;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
+    background-color: #D8605F;
+    width: 3.5rem;
+    height: 2.1rem;
+    text-align: center;
+}
+
+.date__content {
+    margin: auto;
+}
+
+.post__date p {
+    margin: 0;
+}
+
+
+.post_img {
+    width: 20rem;
+    height: 16rem;
+}
+
+.post__info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     background-color: #19B2DE;
+    width: 20em;
+    height: 3.5em;
+    bottom: 0;
 }
 
-.project__info {
+.post__info .info__title {
+    text-align: left;
     position: absolute;
-    bottom: 5%;
-    left: 10%;
+    bottom: 20%;
+    left: 5%;
 }
 
-.info__title {
-    line-height: 0.1em;
-}
-
-.portfolio .floating-box {
+.post__info .info__subtext {
+    text-align: left;
     position: absolute;
-    width: 1.75em;
-    height: 1.75em;
-    background-color: #1596BD;
+    left: 5%;
     bottom: 5%;
-    right: 10%;
-    /* 1596BD */
 }
 
 .floating-box {
@@ -263,81 +259,80 @@ margin: 2px;
     background-color: #1596BD;
 }
 
-/* Blog Thumbnails */
-
-.blog-content__post {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-}
-
-.post_img {
-    width: 100%;
-    height: 100%;
-}
-
-.post_img__placeholder {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.post__date {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #D8605F;
-    width: 3.5rem;
-    height: 2.1rem;
-    text-align: center;
-    padding: 0.2rem;
-}
-
-.post__date p {
-    margin: 0;
-}
-
-.date__day {
-    line-height: 1em;
-}
-
-.post__info {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #1596BD;
-    width: 20rem;
-    height: 3.5rem;
-    bottom: 0px;
-}
-
-.post__info p {
-    margin: 0;
-}
-
-.post__info h3 {
-    margin: 0;
-}
-
-.post__info .floating-box {
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-}
-
-/* Portfolio Thumbnails hovers */
+/* ------------------------- Portfolio Section -------------------------  */
 
 .portfolio-content__project {
+    display: block;
+    flex-direction: column;
     position: relative;
-    width: 100%;
+    margin: auto;
 }
 
 .project__img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 20rem;
+    height: 16rem;
 }
+
+.project__layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 20em;
+    height: 16em;
+    opacity: 0;
+    background-color: rgba(25, 178, 222, .83);
+}
+
+.project__info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 20em;
+    height: 3.5em;
+    bottom: 0;
+}
+
+.project__info .info__title {
+    text-align: left;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+
+.project__info p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.7rem;
+    text-align: left;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+
+.project__layer .info__grey-box {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: #1596BD;
+}
+
+
+/* ------------------ Portfolio Thumbnails hovers ------------------*/
+
+.portfolio-content__project:hover .project__layer {
+    opacity: 1;
+}
+
+.project__img {
+    display: absolute;
+    width: 20em;
+    height: 16em;
+}
+
 
 /* ------------------------- Our Clients Section -------------------------  */
 
@@ -348,7 +343,7 @@ margin: 2px;
 
 .clients-content {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .clients-content__list-item {
@@ -356,19 +351,17 @@ margin: 2px;
     justify-content: center;
     align-items: center;
     background-color: #F3F3F3;
-    padding: 10px;
-    height: 108px;
-    width: 160px;
+    padding: 0.6rem;
+    height: 6.75rem;
+    width: 10rem;
 }
-
-
 
 /* ------------------------- Footer Section -------------------------  */
 
 .web-footer p {
     font-family: "Ubuntu", sans-serif;
-    font-size: 0.75em;
-    line-height: 18px;
+    font-size: 0.75rem;
+    line-height: 1.1rem;
     color: white;
 }
 
@@ -383,12 +376,12 @@ margin: 2px;
 .footer-content__about p {
     /* color should be white, but kept it black for now */
     font-family: "Ubuntu", sans-serif;
-    font-size: 0, 75em;
-    line-height: 1em;
+    font-size: 0 75rem;
+    line-height: 1rem;
 }
 
 footer h3 {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -399,25 +392,25 @@ footer h3 {
 
 .about__title {
     color: #FFB901;
-    width: 232px;
-    border-bottom: 1px solid #21C183;
+    width: 14.5rem;
+    border-bottom: 0.06rem solid #21C183;
 }
 
 .insta__title {
     color: #DE6262;
-    width: 232px;
+    width: 14.5rem;
     border-bottom: 1px solid #19B2DE;
 }
 
 .mastodon__title {
     color: #19B2DE;
-    width: 232px;
+    width: 14.5rem;
     border-bottom: 1px solid #FFB901;
 }
 
 .track__title {
     color: white;
-    width: 146px;
+    width: 4.5rem;
     border-bottom: 1px solid #19B2DE;
 }
 
@@ -427,31 +420,31 @@ footer h3 {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     position: absolute;
-    top: 40px;
+    top: 41px;
     left: 16px;
 }
 
 .footer-content__about .triangle-down {
-    border-top: 4px solid #21C183;
+    border-top: 0.25rem solid #21C183;
 }
 
 .footer-content__insta .triangle-down {
-    border-top: 4px solid #19B2DE;
+    border-top: 0.25rem solid #19B2DE;
 }
 
 .footer-content__mastodon .triangle-down {
-    border-top: 4px solid #FFB901;
+    border-top: 0.25rem solid #FFB901;
 }
 
 .footer-content__track .triangle-down {
-    border-top: 4px solid #19B2DE;
+    border-top: 0.25rem solid #19B2DE;
 }
 
 .footer-content__mastodon p {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.5em;
-    line-height: 14px;
+    font-size: 0.5rem;
+    line-height: 0.9rem;
 }
 
 .footer-content__mastodon a {
@@ -460,8 +453,8 @@ footer h3 {
 }
 
 .boxes__colored {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     border-radius: 2px;
 }
 
