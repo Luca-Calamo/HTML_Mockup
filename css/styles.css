@@ -394,7 +394,7 @@ footer h3 {
 
 .home-page__footer {
     background-color: #0E2E4E;
-    padding: 1em 1em 0 1em;
+    padding: 2em 1em 0 1em;
 }
 
 .about__title {
@@ -497,6 +497,7 @@ footer h3 {
     display: flex;
     gap: 24px;
     position: relative;
+    margin-bottom: 1em;
 }
 
 .footer-intro hr {
@@ -506,6 +507,10 @@ footer h3 {
     background: #FFB901;
     width: 118px;
     height: 1px;
+}
+
+.footer-intro p {
+    max-width: 35rem;
 }
 
 .track__boxes,
