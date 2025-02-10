@@ -154,11 +154,17 @@ margin: 2px;
     color: #545454;
 }
 
-.services-content div {
+.services-content--bulb,
+.services-content--camera,
+.services-content--touch-button,
+.services-content--pen-stylus {
     margin: 1em;
 }
 
-.services-content img {
+.bulb__icon,
+.camera__icon,
+.touch-button__icon,
+.pen-stylus__icon {
     display: block;
     margin: auto;
 }
@@ -526,6 +532,37 @@ footer h3 {
     margin: 1em 0 0 0;
 }
 
+#email {
+    width: 100%;
+    height: 2em;
+    background-color: #DE6262;
+}
+
+#email::placeholder {
+    color: white;
+    font-size: 0.7em;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    background-color: #FFB901;
+    height: 2rem;
+    width: 2rem;
+    flex-shrink: 0;
+}
+
+.submit--icon {
+    margin: auto;
+}
+
+.form-input {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1em;
+    width: 100%;
+}
+
 /* ------------------------------------------------------------------------
 
 
@@ -533,7 +570,7 @@ footer h3 {
     Large screens and up
    ========================================================================== */
 
-@media screen and (min-width: 55.625em){
+@media screen and (min-width: 55.625em) {
 
     /* ----------------- Grid and Overall ------------------ */
 
@@ -889,6 +926,40 @@ footer h3 {
         display: none;
     }
 
+    /* ------------------ Services Section ------------------ */
+    .services-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .services-content--bulb,
+    .services-content--camera,
+    .services-content--touch-button,
+    .services-content--pen-stylus {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 1em;
+        margin: 1em;
+    }
+
+    .services-content__main h3,
+    p {
+        text-align: left;
+        margin: 0;
+    }
+
+    .services-content__main {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .bulb__icon, .camera__icon, .touch-button__icon, .pen-stylus__icon {
+        margin: 0 auto;
+    }
+
     /* ------------------ Footer Section ------------------ */
     .footer-content__about,
     .footer-content__insta {
@@ -914,39 +985,3 @@ footer h3 {
         object-fit: cover;
     }
 }
-
-#email {
-    width: 100%;
-    height: 2em;
-    background-color: #DE6262;
-}
-
-#email::placeholder {
-    color: white;
-    font-size: 0.7em;
-}
-
-.submit {
-    display: flex;
-    justify-content: center;
-    background-color: #FFB901;
-    height: 2rem;
-    width: 2rem;
-    flex-shrink: 0;
-}
-
-.submit--icon {
-    margin: auto;
-}
-
-.form-input {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 1em;
-    width: 100%;
-}
-
-
-
-/* @media screen and (min-width: 480px) and (max-width: 768px) {}
-@media (max-width: 480px)  {} */
