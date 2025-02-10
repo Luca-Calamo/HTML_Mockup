@@ -311,7 +311,7 @@ margin: 2px;
     bottom: 5%;
 }
 
-.project__layer .info__grey-box {
+.project__layer .floating-box-box {
     position: absolute;
     right: 5%;
     bottom: 25%;
