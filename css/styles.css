@@ -337,7 +337,7 @@ ul {
 
 .clients-content {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .clients-content__list-item {
@@ -583,7 +583,7 @@ footer h3 {
     .l-col-3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1em;
+        gap: 16px;
     }
 
     .l-col-4 {
@@ -742,6 +742,8 @@ footer h3 {
     .m-col-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 1em;
     }
 
     .m-col-3 {
@@ -861,7 +863,9 @@ footer h3 {
     }
 
     /* ------------------ Portfolio Section ------------------ */
-
+/* .portfolio {
+    
+} */
     /* ------------------ Clients Section ------------------ */
 
     /* ---------------- Footer General Section ---------------- */
