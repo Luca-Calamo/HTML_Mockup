@@ -685,6 +685,9 @@ footer h3 {
     /* ------------------ Blog Section ------------------ */
 
     /* ------------------ Portfolio Section ------------------ */
+    .portfolio-content__project .post__info {
+        display: none;
+    }
 
     /* ------------------ Clients Section ------------------ */
 
@@ -863,9 +866,10 @@ footer h3 {
     }
 
     /* ------------------ Portfolio Section ------------------ */
-/* .portfolio {
-    
-} */
+    .portfolio-content__project .project__layer {
+        display: none;
+    }
+
     /* ------------------ Clients Section ------------------ */
 
     /* ---------------- Footer General Section ---------------- */
