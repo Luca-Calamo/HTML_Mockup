@@ -389,7 +389,7 @@ footer h3 {
 .about__title {
     color: #FFB901;
     width: 14.5rem;
-    border-bottom: 0.06rem solid #21C183;
+    border-bottom: 1px solid #21C183;
 }
 
 .insta__title {
@@ -406,7 +406,7 @@ footer h3 {
 
 .track__title {
     color: white;
-    width: 4.5rem;
+    width: 8.5rem;
     border-bottom: 1px solid #19B2DE;
 }
 
