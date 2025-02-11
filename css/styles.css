@@ -638,7 +638,7 @@ footer h3 {
 
         & a {
             color: rgba(0, 87, 194, 1);
-        }
+        };
     }
     
 
@@ -863,7 +863,7 @@ footer h3 {
         & .post_img__placeholder {
             object-fit: cover;
             height: 100%;
-        }
+        };
 
 
     }
