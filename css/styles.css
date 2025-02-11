@@ -98,6 +98,8 @@ ul {
     background-color: #265787;
 }
 
+
+
 /* ------------------------- Hero Banner Section -------------------------  */
 
 .hero-card {
@@ -355,6 +357,7 @@ ul {
 .web-footer p {
     font-family: "Ubuntu", sans-serif;
     font-size: 0.75rem;
+    font-weight: 300;
     line-height: 1.1rem;
     color: white;
 }
@@ -368,7 +371,6 @@ ul {
 }
 
 .footer-content__about p {
-    /* color should be white, but kept it black for now */
     font-family: "Ubuntu", sans-serif;
     font-size: 0.75rem;
     line-height: 1rem;
@@ -631,6 +633,15 @@ footer h3 {
         padding: 0%;
     }
 
+    .nav-bar__menu li:hover {
+        background-color: rgba(240, 240, 140, 1);
+
+        & a {
+            color: rgba(0, 87, 194, 1);
+        }
+    }
+    
+
     /* ------------------ Main Section ------------------ */
     .page-home__content {
         margin: 0 0 64px 0;
@@ -661,7 +672,8 @@ footer h3 {
         height: 64px;
         font-family: "Ubuntu", sans-serif;
         font-size: 24px;
-        font-weight: 400;
+        color: #3C3C3C;
+        font-weight: 500;
     }
 
     .hero-card :first-child {
@@ -818,6 +830,7 @@ footer h3 {
         height: 44px;
         font-family: "Ubuntu", sans-serif;
         font-size: 18px;
+        color: #3C3C3C;
         font-weight: 400;
     }
 
